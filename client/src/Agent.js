@@ -8,7 +8,7 @@ function Agent() {
     const [socket, setSocket] = useState(null);
 
     useEffect(() => {
-        const newSocket = new WebSocket('ws://localhost:5050');
+        const newSocket = new WebSocket('ws://chat-app-agentic.onrender.com');
         setSocket(newSocket);
 
         newSocket.onopen = () => {
